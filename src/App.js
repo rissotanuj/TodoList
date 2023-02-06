@@ -51,7 +51,7 @@ function App() {
   },[todos])
 
   return (<>
-    <HashRouter>
+    <HashRouter basename='/'>
     <Navbar/>
     <Routes>
     <Route exact path = "/" element = { <Home  todos = {todos}  OnDelete = {OnDelete} addTodo = {addTodo}/>}></Route>
