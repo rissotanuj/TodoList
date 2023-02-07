@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './Component/Navbar';
 import Home from './Component/Home';
 import About from './Component/About';
-import { HashRouter, Routes, Route, } from 'react-router-dom';
+import { HashRouter, Routes, Route, BrowserRouter, } from 'react-router-dom';
 
 
 
@@ -57,7 +57,7 @@ function App() {
     <Route exact path = "/" element = { <Home  todos = {todos}  OnDelete = {OnDelete} addTodo = {addTodo}/>}></Route>
     <Route exact path = "/about" element = {<About/>}></Route>
      </Routes>
-    </HashRouter>
+     </HashRouter>
   </>)
 }
 
