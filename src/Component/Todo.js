@@ -17,7 +17,7 @@ export default function Todo(props) {
         <h2 className ='my-3' style={{textAlign : "center"}}>TodoList</h2>
         {props.todos.length === 0?"No todos to display ":props.todos.map((todo)=>{
         console.log(todo);
-         return (<> <TodoItem todo = {todo} key = {todo.sno} OnDelete = {props.OnDelete}/> </>)
+         return (<> <TodoItem  todo = {todo} key = {todo.sno} OnDelete = {props.OnDelete}/> </>)
         })}
       </div>
     </div>

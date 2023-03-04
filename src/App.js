@@ -3,9 +3,6 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './Component/Navbar';
 import Home from './Component/Home';
-import About from './Component/About';
-import { HashRouter, Routes, Route, BrowserRouter, } from 'react-router-dom';
-
 
 
 function App() {
@@ -51,13 +48,10 @@ function App() {
   },[todos])
 
   return (<>
-    <HashRouter basename='/TodoList'>
+   
     <Navbar/>
-    <Routes>
-    <Route exact path = "/" element = { <Home  todos = {todos}  OnDelete = {OnDelete} addTodo = {addTodo}/>}></Route>
-    <Route exact path = "/about" element = {<About/>}></Route>
-     </Routes>
-     </HashRouter>
+    <Home  key = {todos.Desc} todos = {todos}  OnDelete = {OnDelete} addTodo = {addTodo}/>
+    
   </>)
 }
 

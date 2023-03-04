@@ -1,6 +1,5 @@
 {
   "name": "todore",
-  "homepage": "https://rissotanuj.github.io/TodoList.git",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
